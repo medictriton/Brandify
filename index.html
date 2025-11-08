@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brandify — Creative Brand & Digital Studio</title>
+  <meta name="description" content="Brandify — modern brand, web and growth studio. We create memorable brands, smart websites and growth strategies." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- ================== HEADER ================== -->
+    <header>
+      <div class="brand" aria-label="Brandify Logo and name">
+        <div class="logo" aria-hidden="true">B</div>
+        <div>
+          <h1>Brandify</h1>
+          <p>Brand & Growth Studio</p>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="#features">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="pill">Get a proposal</a>
+      </nav>
+    </header>
+
+    <!-- ================== HERO SECTION ================== -->
+    <main class="hero">
+      <section class="card" aria-labelledby="hero-title">
+        <span class="kicker">2025 · Modern Branding</span>
+        <h2 id="hero-title">We build brands people remember — and products people use.</h2>
+        <p class="lead">Design, web and growth strategies tailored for founders and startups. Fast iterations — measurable results.</p>
+
+        <div class="cta-group">
+          <button class="btn btn-primary" id="primaryCta" aria-label="Start a project">Start a project →</button>
+          <button class="btn btn-ghost" id="demoCta" aria-label="View demo">View demo</button>
+        </div>
+
+        <!-- ================== FEATURES ================== -->
+        <div class="features" id="features" style="margin-top:22px;">
+          <div class="feature">
+            <h4>Brand Identity</h4>
+            <p>Create bold logos, visual systems and brand guidelines that scale.</p>
+          </div>
+          <div class="feature">
+            <h4>Web & Product</h4>
+            <p>Fast, accessible websites and landing pages optimized for conversion.</p>
+          </div>
+          <div class="feature">
+            <h4>Growth</h4>
+            <p>Paid & organic strategies that move metrics — not just likes.</p>
+          </div>
+        </div>
+
+        <!-- ================== PRICING ================== -->
+        <div class="pricing" id="pricing">
+          <div class="plan">
+            <div class="muted">Starter</div>
+            <div class="price">₦120,000</div>
+            <div>Perfect for solo founders — brand refresh + landing page</div>
+            <ul>
+              <li>Logo + color system</li>
+              <li>1-page responsive site</li>
+              <li>2 rounds of revisions</li>
+            </ul>
+          </div>
+
+          <div class="plan">
+            <div class="muted">Scale</div>
+            <div class="price">₦450,000</div>
+            <div>Full brand system + multi-page site + growth plan</div>
+            <ul>
+              <li>Brand book</li>
+              <li>3–5 page website</li>
+              <li>30-day growth playbook</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== MOCK / SHOWCASE ================== -->
+      <aside class="card mock animate-float" aria-labelledby="mock-title">
+        <div class="dots" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="screen">
+          <h3 id="mock-title">Brandify Showcase</h3>
+          <p class="muted">Fast MVP landing pages, delightful micro-interactions and conversion-first UI.</p>
+          <svg width="160" height="80" viewBox="0 0 160 80" aria-hidden="true" style="margin-top:18px">
+            <rect x="0" y="0" width="160" height="80" rx="10" fill="url(#g)" opacity="0.12"></rect>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7c3aed" stop-opacity="1"/>
+                <stop offset="1" stop-color="#06b6d4" stop-opacity="1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div style="display:flex; gap:12px; margin-top:8px">
+          <div style="flex:1; padding:10px; border-radius:8px; background:rgba(255,255,255,0.02)">
+            <div style="font-weight:700">99.6%</div>
+            <div class="muted" style="font-size:13px">Launch success</div>
+          </div>
+          <div style="flex:1; padding:10px; border-radius:8px; background:rgba(255,255,255,0.02)">
+            <div style="font-weight:700">2–3 weeks</div>
+            <div class="muted" style="font-size:13px">Typical build</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- ================== TESTIMONIAL + CONTACT ================== -->
+    <section class="split">
+      <div class="testimonial card" aria-label="Testimonial">
+        <strong>“Brandify turned our idea into a product people actually use — onboarding conversion doubled.”</strong>
+        <p class="muted" style="margin-top:12px">— Aisha Ogun, Founder, Lumos Health</p>
+      </div>
+
+      <form class="contact card" id="contact" aria-labelledby="contact-title">
+        <h3 id="contact-title">Get a proposal</h3>
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@company.com" required />
+
+        <label for="message">Project brief</label>
+        <textarea id="message" name="message" placeholder="A short description — what you need and timing"></textarea>
+
+        <div style="display:flex; gap:8px; margin-top:12px">
+          <button type="submit" class="btn btn-primary">Request proposal</button>
+          <button type="button" class="btn btn-ghost" id="clear">Clear</button>
+        </div>
+
+        <p id="formStatus" class="muted" style="margin-top:12px; font-size:13px"></p>
+      </form>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer>
+      <div>© <span id="year"></span> Brandify — Built with care</div>
+      <div class="muted">Made for founders · Accessible · Fast</div>
+    </footer>
+  </div>
+
+  <!-- External JS -->
+  <script src="app.js"></script>
+</body>
+</html>
